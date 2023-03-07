@@ -8,7 +8,7 @@ form{
   max-width: 500px;
   margin: 0 auto;
 }
-h1, p{
+h1, pre{
   text-align: center;
 }
 label, input, textarea{
