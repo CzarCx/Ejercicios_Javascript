@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,64 @@
     <script src="./js/validar.js"></script>
     <title>Ejercicio 10</title>
 </head>
+
 <body>
-    
+    <h1>Ejercicio 10</h1>
+    <pre><p>Calcular la utilidad que un trabajador recibe en el reparto 
+        anual de untilidaes si este ese le asigna como un porcentaje de su 
+        salario mensual que depende de su antiguadad en la empresa de acuerdo 
+        con lo siguientes:</p></pre>
+    <br>
+    <br>
+    <div id="table2">
+        <table class="default" style="width:40%" id="table">
+            <tr>
+                <td>Tiempo</td>
+                <td>Utilidad</td>
+            </tr>
+            <tr>
+                <td>Menos de un año</td>
+                <td>5% del salario</td>
+            </tr>
+            <tr>
+                <td>1 año o más y menos de 2 años</td>
+                <td>7% del salario</td>
+            </tr>
+            <tr>
+                <td>2 año o más y menos de 5 años</td>
+                <td>10% del salario</td>
+            </tr>
+            <tr>
+                <td>5 año o más y menos de 10 años</td>
+                <td>15% del salario</td>
+            </tr>
+            <tr>
+                <td>10 años o más</td>
+                <td>20% del salario</td>
+            </tr>
+            </table>
+            </div>
+            <br><br><br>s
+    </div>
+    <form>
+
+        <br>
+        <label>Años trabajados</label>
+        <input type="number" name="años " id="años" min="0" max="100">
+        <br>
+        <label>Meses trabajando (después de los años ya mencionados)</label>
+        <input type="number" name="meses" id="meses" min="0">
+        <br>
+        <label>Pago por mes</label>
+        <input type="number" name="pagomes" id="pagoxmes"  min="0">
+        <br>
+        <input type="button" value="Calcular" onclick="utilidadTrabajador()" id="boton"/>
+        <br>
+        <label>La utilidad anual es:</label>
+        <input type="number" id="utilidad" disabled /><br>
+        <label>El salario total de este año + la utilidad es:</label>
+        <input type="number" id="total" disabled />
+    </form>
 </body>
+
 </html>
