@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1>Ejercicios JavaScript // Ejercicio 2</h1>
+    <h1>Ejercicio 2</h1>
     <pre>
     <p>Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas.El vendedor desea saber cuanto
         dinero obtendrá por concepto de comisiones por las tres venta
@@ -20,13 +20,13 @@
         </pre>
         <form>
             <label>Ingrese la primer venta</label>
-            <input type="number" name="venta1" id="venta1" /><br>
+            <input type="number" name="venta1" id="venta1" min="0"/><br>
             <label>Ingrese la segunda venta</label>
-            <input type="number" name="venta2" id="venta2"><br>
+            <input type="number" name="venta2" id="venta2" min="0"><br>
             <label>Ingrese la tercer venta</label>
-            <input type="number" name="venta3" id="venta3" /><br>
+            <input type="number" name="venta3" id="venta3" min="0"/><br>
             <label>Ingrese el sueldo base</label>
-            <input type="number" name="sueldobase" id="sueldobase" /><br>
+            <input type="number" name="sueldobase" id="sueldobase" min="0"/><br>
             <button type="button" value="Calcular" onclick="ejercicio2()" name="boton">Calcular</button>
             <label>El suedo base es</label>
             <input type="number|" id="sueldobaseresul" disabled />
