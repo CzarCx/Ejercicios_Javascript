@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validar.js"></script>
+</head>
+
+<body>
+    <h1>Ejercicio 4</h1>
+    <pre><p>Un alumno desae saber cual será su calificación final en la 
+    materia de Algoritmos. Dicha calificación se compone de los siguientes procentajes:</p></pre>
+
+    <div class="block">
+        <ul class="list">
+            <li>15% del promedio de sus tres calificaciones parciales</li>
+            <li>30% de la calificación del examen final</li>
+            <li>15% de la calificación de un trabajo final</li>
+        </ul>
+    </div>
+
+    <form>
+        <label>Calificacion obtenida en el primer parcial</label>
+        <input type="number" name="calificacion1" id="calificacion1" max="10" min="0"/><br>
+        <label>Calificacion obtenida en el segundo parcial</label>
+        <input type="number" name="calificacion2" id="calificacion2" max="10" min="0"/><br>
+        <label>Calificacion obtenida en el tercer parcial</label>
+        <input type="number" name="calificacion3" id="calificacion3" max="10" min="0"/><br>
+        <label>Calificacion obtenida en el examen final</label>
+        <input type="number" name="examen" id="examen" max="10" min="0"/><br>
+        <label>Calificacion obtenida en el trabajo final:</label>
+        <input type="number" name="trabajofinal" id="trabajofinal" max="10" min="0"/><br>
+        <button type="button" value="Calcular" onclick="promediofinal()"> Calcular</button><br>
+        <label>Calificacion final</label>
+        <input type="number" id="calificacionfinal" disabled />
+    </form>
+</body>
+
+</html>

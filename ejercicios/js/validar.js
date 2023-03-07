@@ -59,18 +59,18 @@ function ejercicio2()
   }
 
 
-
+///Ejercicio 3///
   
 }
-function ejercicio3()
+function descuento()
 {
-  let compra=document.getElementById("compra").value;
-  let compraregex=/^\d+(\.\d+)?$/; 
-  if(compraregex.test(compra))
+  let precio=document.getElementById("precio").value;
+  let precioregex=/^\d+(\.\d+)?$/; 
+  if(precioregex.test(precio))
   {
-   let descuento=parseFloat(compra)*0.15;
-   let preciofinal=parseFloat(compra)-descuento;
-   document.getElementById("compraresultado").value=preciofinal;
+   let descuento=parseFloat(precio)*0.15;
+   let preciof=parseFloat(precio)-descuento;
+   document.getElementById("compraresu").value=preciof;
   }
   else
   {
@@ -78,27 +78,27 @@ function ejercicio3()
   }
   
 }
-function ejercicio4()
+function promediofinal()
 {
  let calificacionregex=/^(10(\.0+)?|([0-9](\.[0-9]+)?))$/;
-  let calificacion1=document.getElementById("calificacion1").value;
-  let calificacion2=document.getElementById("calificacion2").value;
-  let calificacion3=document.getElementById("calificacion3").value;
-  let califexamenfinal=document.getElementById("examenfinal").value;
+  let cali1=document.getElementById("calificacion1").value;
+  let cali2=document.getElementById("calificacion2").value;
+  let cali3=document.getElementById("calificacion3").value;
+  let examenfinal=document.getElementById("examen").value;
   let trabajofinal=document.getElementById("trabajofinal").value;
-  if(calificacionregex.test(calificacion1))
+  if(calificacionregex.test(cali1))
   {
-   if(calificacionregex.test(calificacion2))
+   if(calificacionregex.test(cali2))
    {
-     if(calificacionregex.test(calificacion3))
+     if(calificacionregex.test(cali3))
      {
-       if (calificacionregex.test(califexamenfinal))
+       if (calificacionregex.test(examenfinal))
        {
          if(calificacionregex.test(trabajofinal))
          {
-           let promediocalificaciones=(parseFloat(calificacion1)+parseFloat(calificacion2)+parseFloat(calificacion3))/3;
-           let porcentajefinal=(promediocalificaciones*0.55)+(parseFloat(califexamenfinal)*0.30)+(parseFloat(trabajofinal)*0.15);
-           document.getElementById("calificacionfinal").value=porcentajefinal;
+           let promediocali=(parseFloat(cali1)+parseFloat(cali2)+parseFloat(cali3))/3;
+           let promediofinal=(promediocali*0.55)+(parseFloat(examenfinal)*0.30)+(parseFloat(trabajofinal)*0.15);
+           document.getElementById("calificacionfinal").value=promediofinal;
          }
          else
          {

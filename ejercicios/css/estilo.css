@@ -17,7 +17,7 @@ h1{
   text-align: center;
   font-family: letra1;
 }
-p{
+p,ul{
   text-align: center;
   font-family: letra2;
 }
@@ -40,3 +40,13 @@ button{
 button:hover{
   background-color: #98ff9c;
 }
+
+.block{
+  text-align:center;
+  background-color:lightgray;
+  }
+  
+  .list{
+  text-align: left;
+  display:inline-block;
+  }
