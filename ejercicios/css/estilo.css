@@ -1,6 +1,11 @@
 @font-face {
   font-family: letra1;
-  src: url(squid.otf);
+  src: url(letra1.otf);
+}
+
+@font-face {
+  font-family: letra2;
+  src: url(letra2.otf);
 }
 form{
   display: flex;
@@ -8,11 +13,17 @@ form{
   max-width: 500px;
   margin: 0 auto;
 }
-h1, pre{
+h1{
   text-align: center;
+  font-family: letra1;
+}
+p{
+  text-align: center;
+  font-family: letra2;
 }
 label, input, textarea{
   margin: 10px;
+  font-family: letra2;
 }
 input, textarea{
   padding: 10px;

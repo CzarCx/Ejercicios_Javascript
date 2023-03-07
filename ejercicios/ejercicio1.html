@@ -10,15 +10,15 @@
     <script src="./js/validar.js"></script>
 </head>
 
-<body>
+<binput>
     <h1>Ejercicios JavaScript // Ejercicio 1</h1>
-    <pre>Suponga que un individuo desea invertir su capital en un banco y 
-        saber cuanto dinero ganara despues de un mes si el banco paga a razón de 2% menual</pre>
+    <pre><p>Suponga que un individuo desea invertir su capital en un banco y 
+        saber cuanto dinero ganara despues de un mes si el banco paga a razón de 2% menual</p></pre>
         <form>
             <label>Ingrese el capital</label>
             <input type="number" name="cap" id="cap" /><br>
-            <input type="button" value="Calcular" onclick="capital()" /> <br>
-            <input type="text" id="resul" disabled />
+            <input type="button" value="Calcular" onclick="capital()"/> <br>
+            <input type="number" id="resul" disabled min="0.00" step="0.01" />
         </form>
 </body>
 
