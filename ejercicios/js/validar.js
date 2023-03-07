@@ -167,35 +167,35 @@ function alumnos()
  
 
 }
-function ejercicio6() {
- let fechan=new Date(document.getElementById("fechan").value);
- let fechaa=new Date();
- if (fechan<fechaa)
- {
-   let años=fechaa.getFullYear()-fechan.getFullYear();
-   let meses=fechaa.getMonth()-fechan.getMonth();
-   let dias=fechaa.getDate()-fechan.getDate();
-   if (meses<0 || (meses===0 && dias<0)) {
-     años--;
-     meses+=(dias<0?11:12);
-   }
- 
-   if (dias<0) {
-     let mesesdias=new Date(fechaa.getFullYear(), fechaa.getMonth(), 0).getDate();
-     dias+=mesesdias;
-     meses--;
-   }
- 
-   let result= `Tienes ${años} años, ${meses} meses y ${dias} días de edad.`;
-   document.getElementById('edadc').value = result;
- }
- else
- {
-   alert("Esa fecha no es válida")
- }
- 
-}
 
+function edad() {
+  let naci=new Date(document.getElementById("fechan").value);
+  let fechactual=new Date();
+  if (naci<fechactual)
+  {
+    let años=fechactual.getFullYear()-naci.getFullYear();
+    let meses=fechactual.getMonth()-naci.getMonth();
+    let dias=fechactual.getDate()-naci.getDate();
+    if (meses<0 || (meses===0 && dias<0)) {
+      años--;
+      meses+=(dias<0?11:12);
+    }
+  
+    if (dias<0) {
+      let mesesdias=new Date(fechactual.getFullYear(), fechactual.getMonth(), 0).getDate();
+      dias+=mesesdias;
+      meses--;
+    }
+  
+    let result= `Tienes ${años} años, ${meses} meses y ${dias} días de edad.`;
+    document.getElementById('edadpersona').value = result;
+  }
+  else
+  {
+    alert("Esa fecha no es válida")
+  }
+  
+}
 function ejercicio7()
 {
  let regc=/^-?\d*\.?\d+$/;
