@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validar.js"></script>
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <h1>Ejercicio 5</h1>
+    <pre><p>Un maestro desae saber que porcentaje de hombres y 
+        que porcentaje de mujeres hay en un grupo de estudiantes</p></pre>
+
+        <form>
+            <label>¿Cuántos alumnos hay en total?</label>
+            <input type="number" name="numalumnos" id="numalumnos" min="0"/><br>
+            <label>¿Cuántos alumnos hay?</label>
+            <input type="number" name="hombres" id="hombres" min="0"/><br>
+            <label>¿Cuántos alumnas hay?</label>
+            <input type="number" name="mujeres" id="mujeres" min="0"/><br>
+            <button type="button" value="Calcular" onclick="alumnos()">Calcular</button><br>
+            <label><p>Porcentajes</p></label><br>
+            <input type="number" id="porcentajealumnos" disabled/><label>De alumnos</label><br>
+            <input type="number" id="porcentajealumnas" disabled/><label>De alumnas</label><br>
+        </form>
+</body>
+</html>

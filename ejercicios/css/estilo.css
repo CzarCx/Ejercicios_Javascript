@@ -7,6 +7,11 @@
   font-family: letra2;
   src: url(letra2.otf);
 }
+
+@font-face {
+  font-family: letra3;
+  src: url(letra3.ttf);
+}
 form{
   display: flex;
   flex-direction: column;
@@ -36,6 +41,7 @@ button{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: medium;
 }
 button:hover{
   background-color: #98ff9c;
@@ -49,4 +55,9 @@ button:hover{
   .list{
   text-align: left;
   display:inline-block;
+  }
+
+  #resul{
+    font-family: letra3;
+    font-size: larger;
   }

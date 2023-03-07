@@ -126,27 +126,27 @@ function promediofinal()
   }
   
 }
-function ejercicio5()
+function alumnos()
 {
- let regex1=/^[1-9]\d*$/;
- let comprobar;
- let numeroalumnos=document.getElementById("numeroalumnos").value;
- let numeroalumnosh=document.getElementById("alumnosh").value;
- let numeroalumnosm=document.getElementById("alumnosm").value;
- if (regex1.test(numeroalumnos))
+ let regex1=/^[0-9]\d*$/;
+ let total;
+ let numalumnos=document.getElementById("numalumnos").value;
+ let numalumnosh=document.getElementById("hombres").value;
+ let numalumnosm=document.getElementById("mujeres").value;
+ if (regex1.test(numalumnos))
  {
-   if (regex1.test(numeroalumnosh))
+   if (regex1.test(numalumnosh))
    {
-     if (regex1.test(numeroalumnosm))
+     if (regex1.test(numalumnosm))
      {
-       comprobar=parseInt(numeroalumnosh)+parseInt(numeroalumnosm);
-       if (comprobar!=numeroalumnos)
+       total=parseInt(numalumnosh)+parseInt(numalumnosm);
+       if (total!=numalumnos)
        {
-         alert("Los alumnos totales no son los mismos que los alumnos dados")
+         alert("La cantidad de alumn@s excede a la cantidad total")
        }
        else{
-         let porcentajealumnosh=(numeroalumnosh*100)/numeroalumnos;
-         let porcentajealumnom=(numeroalumnosm*100)/numeroalumnos;
+         let porcentajealumnom=(numalumnosm*100)/numalumnos;
+         let porcentajealumnosh=(numalumnosh*100)/numalumnos;
          document.getElementById("porcentajealumnos").value=porcentajealumnosh;
          document.getElementById("porcentajealumnas").value=porcentajealumnom;
        }
