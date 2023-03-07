@@ -16,6 +16,24 @@
         empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se
         pagan al doble de una hors normal cuando no exceden de 8; si las horas extras exceden de 8 se pagan las primeras 8
         al doble de lo que se pagan las lions normales y el resto al triple</p></pre>
+        <form>
+            <label>Ingrese la cantidad de horas que trabajo el trabajador</label>
+            <input type="number" name="hrst" id="hrst"/><br>
+            <label>Ingrese cuanto se le paga por hora al trabajador</label>
+            <input type="number" name="salario" id="salario"/><br>
+            <input type="button" value="Calcular" onclick="hrsxtra()" id="boton"/><br>
+
+            <label>Las horas trabajadas por el trabajador</label>
+            <input type="number" id="horasnormales" disabled/>
+            <label>(horas normales)</label><br>
+            <label>El trabajador laburó:</label>
+            <input type="number" id="horasdobles" disabled/>
+            <label>(horas extras que se pagaron al doble)</label><br>
+            <label>El trabajador laburó:</label>
+            <input type="number" id="horastriples" disabled/>
+            <label>(horas extras que se pagaron al triple)</label><br>
+            <label>SSe le deberá pagar: $</label><input type="number" id="salariofinal" disabled/>
+        </form>
 </body>
 
 </html>

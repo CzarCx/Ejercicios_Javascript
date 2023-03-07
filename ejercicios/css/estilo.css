@@ -51,6 +51,10 @@ button:hover{
   text-align:center;
   background-color:lightgray;
   }
+
+  .block2{
+    text-align:center;
+    }
   
   .list{
   text-align: left;
@@ -82,4 +86,9 @@ button:hover{
   }
   #table{
     border: 1px solid white;
+  }
+
+  #menu{
+    font-family: letra3;
+    font-size: larger;
   }

@@ -12,9 +12,9 @@ function capital() {
 
 }
 
-//Ejercicio 2//
 
-function ejercicio2() {
+
+function vendedor() {
   let checar = /^\d+(\.\d+)?$/;
   let venta1 = document.getElementById("venta1").value;
   let venta2 = document.getElementById("venta2").value;
@@ -49,7 +49,6 @@ function ejercicio2() {
   }
 
 
-  ///Ejercicio 3///
 
 }
 function descuento() {
@@ -82,23 +81,23 @@ function promediofinal() {
             document.getElementById("calificacionfinal").value = promediofinal;
           }
           else {
-            alert("Hay un valor incorrecto")
+            alert("Verifique que los valores sean correctos")
           }
         }
         else {
-          alert("Hay un valor incorrecto")
+          alert("Verifique que los valores sean correctos")
         }
       }
       else {
-        alert("Hay un valor incorrecto")
+        alert("Verifique que los valores sean correctos")
       }
     }
     else {
-      alert("Hay un valor incorrecto")
+      alert("Verifique que los valores sean correctos")
     }
   }
   else {
-    alert("Hay un valor incorrecto")
+    alert("Verifique que los valores sean correctos")
   }
 
 }
@@ -123,15 +122,15 @@ function alumnos() {
         }
       }
       else {
-        alert("Hay un valor incorrecto")
+        alert("Verifique que los valores sean correctos")
       }
     }
     else {
-      alert("Hay un valor incorrecto")
+      alert("Verifique que los valores sean correctos")
     }
   }
   else {
-    alert("Hay un valor incorrecto")
+    alert("Verifique que los valores sean correctos")
   }
 
 
@@ -221,73 +220,73 @@ function tresnumeros() {
   }
 
 }
-function ejercicio9() {
+function hrsxtra() {
   let rege1 = /^\d+$/;
   let rege2 = /^\d*\.?\d+$/;
-  let horastotales = document.getElementById("horastotales").value;
-  let salariohora = document.getElementById("salario").value;
-  let horasnormalestrabajadas;
+  let hrst = document.getElementById("hrst").value;
+  let salarioxhora = document.getElementById("salario").value;
+  let horasnormales;
+  let pagoextra;
+  let salariotriple;
   let pagototal;
   let pagonormal;
   let horasextra;
-  let salariohorasextra2;
-  let pagohorasextra;
-  let salarioenhoratriple;
-  let horasextratrabajadasp;
-  let horasdobletrabajadas;
-  let horastripletrabajadas;
-  if (rege1.test(horastotales)) {
-    if (rege2.test(salariohora)) {
-      if (horastotales <= 40) {
-        pagototal = horastotales * salariohora;
+  let salarioex;
+  let extratraba;
+  let hrsdobles;
+  let triple;
+  if (rege1.test(hrst)) {
+    if (rege2.test(salarioxhora)) {
+      if (hrst <= 40) {
+        pagototal = hrst * salarioxhora;
       }
       else {
-        pagonormal = 40 * salariohora;
-        horasextra = horastotales - 40;
+        pagonormal = 40 * salarioxhora;
+        horasextra = hrst - 40;
         if (horasextra <= 8) {
-          pagohorasextra = salariohora * 2;
-          salariohorasextra2 = pagohorasextra * horasextra;
-          pagototal = pagonormal + salariohorasextra2;
+          pagoextra = salarioxhora * 2;
+          salarioex = pagoextra * horasextra;
+          pagototal = pagonormal + salarioex;
         }
         else {
-          pagohorasextra = salariohora * 2;
-          salariohorasextra2 = pagohorasextra * 8;
+          pagoextra = salarioxhora * 2;
+          salarioex = pagoextra * 8;
           horastriple = horasextra - 8;
-          salarioenhoratriple = salariohora * 3;
-          pagohorastriple = horastriple * salarioenhoratriple;
-          pagototal = pagohorastriple + pagonormal + salariohorasextra2;
+          salariotriple = salarioxhora * 3;
+          pagohorastriple = horastriple * salariotriple;
+          pagototal = pagohorastriple + pagonormal + salarioex;
         }
       }
-      if (horastotales <= 40) {
-        horasnormalestrabajadas = horastotales;
-        horasdobletrabajadas = 0;
-        horastripletrabajadas = 0;
+      if (hrst <= 40) {
+        horasnormales = hrst;
+        hrsdobles = 0;
+        triple = 0;
       }
       else {
-        horasnormalestrabajadas = 40;
-        horasextratrabajadasp = horastotales - 40;
-        if (horasextratrabajadasp <= 8) {
-          horasdobletrabajadas = horasextratrabajadasp;
-          horastripletrabajadas = 0;
+        horasnormales = 40;
+        extratraba = hrst - 40;
+        if (extratraba <= 8) {
+          hrsdobles = extratraba;
+          triple = 0;
         }
         else {
-          horasnormalestrabajadas = 40;
-          horasdobletrabajadas = 8;
-          horastripletrabajadas = horasextratrabajadasp - 8;
+          horasnormales = 40;
+          hrsdobles = 8;
+          triple = extratraba - 8;
         }
 
       }
       document.getElementById("salariofinal").value = pagototal;
-      document.getElementById("horasnormales").value = horasnormalestrabajadas;
-      document.getElementById("horasdobles").value = horasdobletrabajadas;
-      document.getElementById("horastriples").value = horastripletrabajadas;
+      document.getElementById("horasnormales").value = horasnormales;
+      document.getElementById("horasdobles").value = hrsdobles;
+      document.getElementById("horastriples").value = triple;
     }
     else {
-      alert("Hay un valor incorrecto")
+      alert("Verifique que los valores sean correctos")
     }
   }
   else {
-    alert("Hay un valor incorrecto")
+    alert("Verifique que los valores sean correctos")
   }
 
 }
